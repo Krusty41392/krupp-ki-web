@@ -1,0 +1,35 @@
+// Definiere die relativen Pfade zu den Schriftarten
+$font-path: "../fonts/timesnewromance/";
+
+// Importiere die Schriftarten
+@font-face {
+  font-family: 'Times New Romance';
+  src: url('#{$font-path}Times New Romance.otf') format('opentype'),
+       url('#{$font-path}Times New Romance.ttf') format('truetype'),
+       url('#{$font-path}Times New Romance.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Times New Romance';
+  src: url('#{$font-path}Times New Romance-Bold.otf') format('opentype'),
+       url('#{$font-path}Times New Romance-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Times New Romance';
+  src: url('#{$font-path}Times New Romance-Bold-Italic.otf') format('opentype'),
+       url('#{$font-path}Times New Romance-Bold-Italic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+// Füge hier weitere @font-face-Regeln für die anderen Schriftarten hinzu
+
+// Verwende die Schriftarten in deinen Stilregeln
+body {
+  font-family: 'Times New Romance', serif;
+}

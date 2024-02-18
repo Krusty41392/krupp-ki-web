@@ -1,0 +1,10 @@
+html, body {
+    max-width: 2000px;
+    margin: 0 auto; // Horizontale Zentrierung der Seite
+  }
+  
+
+@import 'header';
+@import 'frontpage';
+@import 'fonts';
+@import 'contact';

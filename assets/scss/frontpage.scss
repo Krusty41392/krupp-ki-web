@@ -1,0 +1,38 @@
+.header-post-title-container {
+    display: none;
+}
+
+#primary {
+    position: relative;
+    top: -51px;
+}
+
+.frontpage-slider {
+
+    .swiper-button-prev {
+        color: #343a40;
+        position: absolute;
+        left: -40px;
+    }
+
+    .swiper-button-next {
+        color: #343a40;
+        position: absolute;
+        right: -40px;
+    }
+    
+    .swiper-pagination-bullets {
+        position: absolute;
+        bottom: -40px;
+
+        .swiper-pagination-bullet-active {
+            background-color: #343a40;
+        }
+    }
+    
+}
+
+.contact-person {
+    display: flex;
+    flex-direction: column;
+}

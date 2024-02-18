@@ -1,0 +1,103 @@
+html, body {
+  max-width: 2000px;
+  margin: 0 auto; }
+
+.header {
+  background-color: #343a40;
+  display: flex; }
+  .header .main-head-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw; }
+    @media screen and (max-width: 768px) {
+      .header .main-head-wrap {
+        display: block; } }
+  @media screen and (max-width: 768px) {
+    .header #header-logo-image {
+      padding-left: 30px; } }
+  @media screen and (max-width: 576px) {
+    .header #header-logo-image {
+      display: none; } }
+  .header #header-text {
+    padding-top: 10px;
+    padding-right: 0; }
+    @media screen and (max-width: 576px) {
+      .header #header-text {
+        padding-left: 30px; } }
+  .header #site-title a {
+    color: white; }
+  .header #site-title a:hover {
+    color: white; }
+  .header #menu-main-menu li a {
+    color: white;
+    font-size: 20px; }
+  .header .menu-toggle::before {
+    color: white; }
+
+.header-post-title-container {
+  display: none; }
+
+#primary {
+  position: relative;
+  top: -51px; }
+
+.frontpage-slider .swiper-button-prev {
+  color: #343a40;
+  position: absolute;
+  left: -40px; }
+.frontpage-slider .swiper-button-next {
+  color: #343a40;
+  position: absolute;
+  right: -40px; }
+.frontpage-slider .swiper-pagination-bullets {
+  position: absolute;
+  bottom: -40px; }
+  .frontpage-slider .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background-color: #343a40; }
+
+.contact-person {
+  display: flex;
+  flex-direction: column; }
+
+@font-face {
+  font-family: 'Times New Romance';
+  src: url("../fonts/timesnewromance/Times New Romance.otf") format("opentype"), url("../fonts/timesnewromance/Times New Romance.ttf") format("truetype"), url("../fonts/timesnewromance/Times New Romance.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Times New Romance';
+  src: url("../fonts/timesnewromance/Times New Romance-Bold.otf") format("opentype"), url("../fonts/timesnewromance/Times New Romance-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Times New Romance';
+  src: url("../fonts/timesnewromance/Times New Romance-Bold-Italic.otf") format("opentype"), url("../fonts/timesnewromance/Times New Romance-Bold-Italic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic; }
+body {
+  font-family: 'Times New Romance', serif; }
+
+.contact-form-container {
+  padding: 0 30px; }
+  .contact-form-container .contact-form-row {
+    display: flex;
+    justify-content: center; }
+    .contact-form-container .contact-form-row p {
+      margin-bottom: 5px; }
+    .contact-form-container .contact-form-row label {
+      color: white;
+      font-size: 20px; }
+    .contact-form-container .contact-form-row input {
+      margin: 0; }
+    .contact-form-container .contact-form-row .contact-form {
+      margin: 30px 0; }
+      .contact-form-container .contact-form-row .contact-form .salutation {
+        color: white; }
+        .contact-form-container .contact-form-row .contact-form .salutation .first {
+          margin-left: 0; }
+      .contact-form-container .contact-form-row .contact-form .phone {
+        width: 98%;
+        border: none; }
+
+/*# sourceMappingURL=style.min.css.map */

@@ -1,0 +1,39 @@
+.contact-form-container {
+    padding: 0 30px;
+
+    .contact-form-row {
+        display: flex;
+        justify-content: center;
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        label {
+            color: white;
+            font-size: 20px;
+        }
+        
+        input {
+            margin: 0;
+        }
+
+        .contact-form {
+            margin: 30px 0;
+
+            .salutation {
+                color: white;
+
+                .first {
+                    margin-left: 0;
+                }
+            }
+        
+            .phone {
+                width: 98%;
+                border: none;
+            }
+        }
+    } 
+}
+
