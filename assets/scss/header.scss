@@ -1,17 +1,35 @@
 .header {
     background-color: #343a40;
-    display: flex;
-
-    .main-head-wrap {
-        display: flex;
-        flex-direction: column;
+    
+    #header-section {
         align-items: center;
-        width: 100vw;
 
-        @media screen and (max-width: 768px) {
-            display: block;
+        .col-12 {
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media screen and (max-width: 820px) {
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+            }
         }
     }
+    #site-navigation {
+        .menu-main-menu-container {
+            margin-top: 0;
+            .menu-primary-container {
+                margin-bottom: 0;
+            }
+        }
+        .menu-toggle {
+            margin-top: 0;
+        }
+    }
+    
 
     #header-logo-image {
         @media  screen and (max-width: 768px) {
@@ -28,7 +46,7 @@
         padding-right: 0;
         
         @media screen and (max-width: 576px) {
-            padding-left: 30px;
+            padding-left: 15px;
         }
 
     }
@@ -36,10 +54,12 @@
     #site-title {
         a {
             color: white;
+            text-decoration: none;
         }
 
         a:hover {
             color: white;
+            text-decoration: underline;
         }
     }
 
@@ -48,11 +68,22 @@
             a {
                 color: white;
                 font-size: 20px;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: white;
+                text-decoration: underline;
             }
         }
     }
 
+
     .menu-toggle::before{
         color: white;
+    }
+
+    .menu-main-menu-container {
+        margin-top: 50px;
     }
 }

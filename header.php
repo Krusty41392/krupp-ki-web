@@ -29,7 +29,6 @@ if ( function_exists( 'wp_body_open' ) ) {
 ?>
 
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'ample' ); ?></a>
 
 	<?php
 	if ( ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'none' ) {
@@ -40,71 +39,63 @@ if ( function_exists( 'wp_body_open' ) ) {
 	?>
 	<header id="masthead" class="site-header <?php echo $header_extra_class; ?>" role="banner">
 		<div class="header">
-			<?php
-			if ( ample_option( 'ample_header_image_position', 'above' ) == 'above' ) {
-				ample_render_header_image();
-			}
-			?>
-
-			<div class="main-head-wrap inner-wrap clearfix">
-				<div id="header-left-section">
+			<div class="main-head-wrap inner-wrap clearfix container">
+				<div id="header-section" class="row">
 					<?php if ( ( ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'both' || ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'logo_only' ) ) { ?>
+						<div class="col-12 d-flex items-justified-center">
+							<div id="header-logo-image">
+								<?php
+								if ( function_exists( 'the_custom_logo' ) && has_custom_logo( $blog_id = 0 ) ) {
+									ample_the_custom_logo();
+								}
+								?>
+							</div>
 
-						<div id="header-logo-image">
-							<?php
-							if ( function_exists( 'the_custom_logo' ) && has_custom_logo( $blog_id = 0 ) ) {
-								ample_the_custom_logo();
+								<?php
+							}
+
+							$screen_reader = '';
+							if ( ( ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'logo_only' || ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'none' ) ) {
+								$screen_reader = 'screen-reader-text';
 							}
 							?>
-						</div><!-- #header-logo-image -->
-
-						<?php
-					}
-
-					$screen_reader = '';
-					if ( ( ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'logo_only' || ample_option( 'ample_show_header_logo_text', 'text_only' ) == 'none' ) ) {
-						$screen_reader = 'screen-reader-text';
-					}
-					?>
-					<div id="header-text" class="<?php echo $screen_reader; ?>">
-						<?php
-						if ( is_front_page() || is_home() ) :
-							?>
-							<h1 id="site-title">
-								<a href="<?php echo esc_url( home_url( '/startseite' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-							</h1>
-						<?php else : ?>
-							<h3 id="site-title">
-								<a href="<?php echo esc_url( home_url( '/startseite' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-							</h3>
-							<?php
-						endif;
-						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) :
-							?>
-							<p id="site-description"><?php echo $description; ?></p>
-							<?php
-						endif;
-						?>
-					</div>
-				</div><!-- #header-left-section -->
-
-				<div id="header-right-section">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<span class="menu-toggle"></span>
-						<?php
-						if ( has_nav_menu( 'primary' ) ) {
-							wp_nav_menu(
-								array(
-									'theme_location' => 'primary',
-									'menu_class'     => 'menu menu-primary-container',
-								)
-							);
-						} else {
-							wp_page_menu();
-						}
-						?>
-					</nav>
+							<div id="header-text" class="<?php echo $screen_reader; ?>">
+									<?php
+								if ( is_front_page() || is_home() ) :
+									?>
+									<h1 id="site-title">
+										<a href="<?php echo esc_url( home_url( '/startseite' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+									</h1>
+								<?php else : ?>
+									<h3 id="site-title">
+										<a href="<?php echo esc_url( home_url( '/startseite' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+									</h3>
+									
+								<?php
+								endif;
+								
+								?>
+							</div>
+							
+							<nav id="site-navigation" class="main-navigation" role="navigation">
+											<span class="menu-toggle"></span>
+											<?php
+											if ( has_nav_menu( 'primary' ) ) {
+												wp_nav_menu(
+													array(
+														'theme_location' => 'primary',
+														'menu_class'     => 'menu menu-primary-container',
+													)
+												);
+											} else {
+												wp_page_menu();
+											}
+											?>
+							</nav>
+							
+							
+						</div>
+					
 				</div>
 			</div><!-- .main-head-wrap -->
 			<?php

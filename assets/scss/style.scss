@@ -3,7 +3,7 @@ html, body {
     margin: 0 auto; // Horizontale Zentrierung der Seite
   }
   
-
+@import '../css/bootstrap/bootstrap.min.css';
 @import 'header';
 @import 'frontpage';
 @import 'fonts';
