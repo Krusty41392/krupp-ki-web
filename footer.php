@@ -2,9 +2,10 @@
       </div>
 
       <footer id="colophon">
-         <div class="container">
+         <div class="container text-center">
             <div class="col-12">
                test
+               <img src="" alt="">
             </div>
          </div>
          <div class="container">
@@ -28,8 +29,6 @@
                </div>
             </div>
          </div>
-
-         
       </footer>
       <a href="#masthead" id="scroll-up"><i class="fa fa-angle-up"></i></a>
    </div><!-- #page -->

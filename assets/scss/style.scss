@@ -1,6 +1,10 @@
 html, body {
-    max-width: 2000px;
+    max-width: 2500px;
     margin: 0 auto; // Horizontale Zentrierung der Seite
+  }
+
+  .inner-wrap {
+    max-width: 1800px;
   }
   
 @import '../css/bootstrap/bootstrap.min.css';
@@ -9,3 +13,4 @@ html, body {
 @import 'fonts';
 @import 'contact';
 @import 'footer';
+@import 'aipage';

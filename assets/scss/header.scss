@@ -3,7 +3,7 @@
     
     #header-section {
         align-items: center;
-
+        
         .col-12 {
             @media screen and (max-width: 1024px) {
                 flex-direction: column;
@@ -85,5 +85,12 @@
 
     .menu-main-menu-container {
         margin-top: 50px;
+    }
+}
+
+.header-img {
+    img {
+        height: 800px !important;
+        object-fit: cover;
     }
 }
