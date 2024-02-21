@@ -138,26 +138,26 @@ body {
         border: none; }
 
 #scroll-up {
-  background-color: #d3d3d3; }
+  background-color: #d3d3d3 !important; }
 
-.chat-bots .chatbot-img figure img {
+.image-left .left-img figure img {
   padding-left: 25px; }
-.chat-bots .wp-block-media-text__content {
+  @media screen and (max-width: 576px) {
+    .image-left .left-img figure img {
+      padding-left: 0; } }
+.image-left .wp-block-media-text__content {
   padding-top: 15px;
   padding-bottom: 15px; }
 
-.picture-recognition {
+.image-right {
   margin: 50px 0; }
-  .picture-recognition .ai-img figure img {
+  .image-right .right-img figure img {
     padding-right: 25px; }
-  .picture-recognition .wp-block-media-text__content {
+    @media screen and (max-width: 576px) {
+      .image-right .right-img figure img {
+        padding-right: 0; } }
+  .image-right .wp-block-media-text__content {
     padding-top: 15px;
     padding-bottom: 15px; }
-
-.search-engine .search-img figure img {
-  padding-left: 25px; }
-.search-engine .wp-block-media-text__content {
-  padding-top: 15px;
-  padding-bottom: 15px; }
 
 /*# sourceMappingURL=style.min.css.map */
