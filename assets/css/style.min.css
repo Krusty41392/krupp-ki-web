@@ -161,6 +161,15 @@ body {
 #scroll-up:hover {
   opacity: 0.5 !important; }
 
+.copyright {
+  font-size: 16px !important; }
+
+#menu-footer-menu {
+  display: flex;
+  flex-direction: column; }
+  #menu-footer-menu li a {
+    font-size: 16px; }
+
 .image-left .left-img figure img {
   padding-left: 25px;
   object-fit: contain; }

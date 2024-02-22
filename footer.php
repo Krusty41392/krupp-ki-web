@@ -12,7 +12,13 @@
                <div class="footer-bottom clearfix">
                   <div class="row">
                      <div class="col-4">
-                        <p>© 2024 Krupp KI & Web. Alle Rechte vorbehalten.</p>
+                        <h5>Krupp Ki & Web</h5>
+                        <p>Industriering 44 <br>
+                           41751 Viersen <br>
+                           Telefon: <a href="tel:017634587278">0176/34587278</a> <br>
+                           E-Mail: <a href="mailto:r.krupp151276@outlook.de">r.krupp151276@outlook.de</a>
+                        </p>
+                        <p class="copyright">2024 Krupp KI & Web. Alle Rechte vorbehalten.</p>
                      </div>
                      <div class="col-4">
                         <div class="footer-nav">

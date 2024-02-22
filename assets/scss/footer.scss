@@ -10,3 +10,17 @@
 #scroll-up:hover {
     opacity: 0.5 !important;
 }
+
+.copyright {
+    font-size: 16px !important;
+}
+
+#menu-footer-menu {
+    display: flex;
+    flex-direction: column;
+    li {
+        a {
+            font-size: 16px;
+        }
+    }
+}
