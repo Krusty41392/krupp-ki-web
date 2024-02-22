@@ -1,3 +1,12 @@
+#colophon {
+    background-color: black;
+}
+
 #scroll-up {
-    background-color: #d3d3d3 !important;
+    background-color: #00ed00 !important;
+    opacity: 1 !important;
+}
+
+#scroll-up:hover {
+    opacity: 0.5 !important;
 }

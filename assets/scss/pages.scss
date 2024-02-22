@@ -1,6 +1,4 @@
 .image-left {
-    background-color: #d3d3d3;
-    
     .left-img {
         figure {
             img {
@@ -41,3 +39,30 @@
         padding-bottom: 15px;
     }
 }
+
+.anker-row {
+    .anker {
+        color: #00ed00;
+        a{
+            color: #00ed00;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        a:hover {
+            color: #00ed00;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.info-container {
+    margin-top: 70px;
+    .info-box {
+        background-color: #00ed00;
+        padding: 20px;
+    }
+}
+
+
