@@ -1,8 +1,11 @@
 .image-left {
+    background-color: #d3d3d3;
+    
     .left-img {
         figure {
             img {
                 padding-left: 25px;
+                object-fit: contain;
 
                 @media screen and (max-width: 576px) {
                     padding-left: 0;
@@ -19,10 +22,12 @@
 
 .image-right {
     margin: 50px 0;
+
     .right-img {
         figure {
             img {
                 padding-right: 25px;
+                object-fit: contain;
 
                 @media screen and (max-width: 576px) {
                     padding-right: 0;

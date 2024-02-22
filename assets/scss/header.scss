@@ -1,5 +1,11 @@
 .header {
     background-color: #343a40;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border: none;
+    z-index: 9999;
+
     
     #header-section {
         align-items: center;
@@ -89,6 +95,7 @@
 }
 
 .header-img {
+    margin-bottom: 50px;
     img {
         height: 800px !important;
         object-fit: cover;

@@ -25,12 +25,18 @@ if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
-function theme_enqueue_scripts() {
-    // Deine main.js einbinden
-    wp_enqueue_script('main', trailingslashit(get_stylesheet_directory_uri()) . 'assets/js/main.js', array(), '1.0.0', true);
-
+function enqueue_main_script() {
+    ?>
+    <script type="module">
+        const script = document.createElement('script');
+        script.type = 'module';
+        script.src = '<?php echo esc_url(trailingslashit(get_stylesheet_directory_uri()) . 'assets/js/main.js'); ?>';
+        document.body.appendChild(script);
+    </script>
+    <?php
 }
-add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+add_action('wp_footer', 'enqueue_main_script');
+
 
 
 

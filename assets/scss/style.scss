@@ -6,7 +6,7 @@ html, body {
   .inner-wrap {
     max-width: 1800px;
   }
-  
+
 @import '../css/bootstrap/bootstrap.min.css';
 @import 'header';
 @import 'frontpage';
@@ -14,3 +14,4 @@ html, body {
 @import 'contact';
 @import 'footer';
 @import 'pages';
+@import 'posts';
